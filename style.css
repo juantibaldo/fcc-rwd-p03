@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: auto auto 100px 100px;
+    grid-template-rows: auto auto 200px 60px;
     grid-template-areas: "header"
                          "main"                         
                          "form"
@@ -23,7 +23,7 @@ header {
     flex-direction: row;
     background-color: white;
     justify-content: center;
-    bordeR: 1px solid green
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     
 }
 
@@ -45,26 +45,26 @@ main {
     flex-direction: column;
 }
 
-#about {
-    background-color: white;
-    height: 200px;
-    margin-top: 80px;
-}
 
 #about {
+    background-color: white;
+    height: 600px;
+    margin-top: 80px;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 10px
+    padding: 50px 10px
 }
 
 p {
     margin: 0 0 20px;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 #video-div {
     
-    background-color: grey;
+    background-color: lightpink;
     padding: 100px 0;
 }
 
@@ -90,7 +90,7 @@ p {
 
 
 #plan {
-    position: relative;
+    
     max-width: 300px;
     padding: 20px 30px;
     margin: 0 15px 30px;
@@ -103,8 +103,10 @@ p {
 #title {
     font-weight: 400;
     font-size: 3em;
-    padding-bottom: 20px;
-    text-align: center;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -137,17 +139,26 @@ p {
 
 #form-div {
     grid-area: form;
-    background-color: yellow;
+    background-color: lightpink;
     width: 100%;
+
+    
 }
 
 footer {
     grid-area: footer;
-    background-color: green;
+    background-color: black;
     position: relative;
     bottom: 0;
-    height: 100px;   
+    ;   
   
+}
+
+#footer__text {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 
