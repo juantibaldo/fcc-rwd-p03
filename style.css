@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto auto 100px 100px;
+    grid-template-areas: "header"
+                         "main"                         
+                         "form"
+                         "footer";
+}
+
+
+header {
+    grid-area: header;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: center;
+    bordeR: 1px solid green
+    
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 350px;
+    
+}
+
+.nav-link {
+    font-size: 2em;
+}
+
+main {
+    grid-area: main; 
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    background-color: white;
+    height: 200px;
+    margin-top: 80px;
+}
+
+#about {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+#video-div {
+    
+    background-color: grey;
+    padding: 100px 0;
+}
+
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 0 10px;
+    
+}
+
+#plans__section {
+    margin: 20px 0;
+}
+
+#plans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+
+#plan {
+    position: relative;
+    max-width: 300px;
+    padding: 20px 30px;
+    margin: 0 15px 30px;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-weight: 400;
+    font-size: 3em;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+#plan__title {
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    padding: 5px 10px 10px 10px;
+}
+
+#plan__price {
+    font-size: 4em;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+#plan__description {
+    padding: 0px;
+    text-align:justify;
+
+}
+
+#plan__btn {
+    size: 3em;
+    width: 50%;
+    height: 40px;
+    margin: 30px 0 10px 0;
+
+}
+
+#form-div {
+    grid-area: form;
+    background-color: yellow;
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: green;
+    position: relative;
+    bottom: 0;
+    height: 100px;   
+  
+}
+
+
+@media (max-width: 320px) {
+    #nav-bar {
+        background-color: black;
+    }       
+}      
