@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: auto auto 200px 60px;
+    grid-template-rows: auto auto 250px 60px;
     grid-template-areas: "header"
                          "main"                         
                          "form"
@@ -80,7 +80,8 @@ main {
 
 #about__description {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
+    
 }
 
 p {
@@ -91,7 +92,7 @@ p {
 
 #video-div {
     background-color: #A68DAD;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 #video {
@@ -120,7 +121,7 @@ p {
     max-width: 300px;
     padding: 20px 30px;
     margin: 0 15px 30px;
-    border: 2px solid green;
+    border: 2px solid #A68DAD;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,6 +134,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0
 
 }
 
@@ -160,6 +162,8 @@ p {
     width: 50%;
     height: 40px;
     margin: 30px 0 10px 0;
+    background-color: #A68DAD;
+    color: #F0ECE3;
 
 }
 
@@ -185,9 +189,11 @@ footer {
 
 input[type=email] {
     height: 40px;
-    width: 250px;
+    width: 290px;
     font-size: 1em;
     padding-left: 15px;
+    background-color: #F0ECE3;
+    color: #C7B198;
 }
 
 #form-submit {
@@ -196,6 +202,7 @@ input[type=email] {
     width: 100px;
     height: 40px;
     margin: 30px 0 10px 0;
+    background-color: #F0ECE3;
 }
 
 #footer__text {
