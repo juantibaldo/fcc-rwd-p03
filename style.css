@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 
-li, a, button {
+li, a, button, h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
+}
+
+h1 {
+    font-size: 3em;
 }
 
 body {
@@ -29,7 +33,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: white;
+    background-color: #F0ECE3;
     justify-content: space-between;
     padding: 30px 5%;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -47,12 +51,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-self: center;
-    width: 350px;
+    width: 300px;
+    
     
 }
 
 .nav-link {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 main {
@@ -63,13 +68,19 @@ main {
 
 
 #about {
-    background-color: white;
+    background-color: #DFD3C3;
     height: 600px;
-    margin-top: 80px;
+    margin-top: 80px;    
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%
+}
+
+#about__description {
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 10px
+    margin: auto;
 }
 
 p {
@@ -79,8 +90,7 @@ p {
 }
 
 #video-div {
-    
-    background-color: lightpink;
+    background-color: #A68DAD;
     padding: 100px 0;
 }
 
@@ -94,7 +104,7 @@ p {
 }
 
 #plans__section {
-    margin: 20px 0;
+    background-color: #DFD3C3;
 }
 
 #plans {
@@ -155,19 +165,37 @@ p {
 
 #form-div {
     grid-area: form;
-    background-color: lightpink;
+    background-color:  #C7B198;
     width: 100%;
+    display: flex;
+    flex-direction: column;    
+}
 
-    
+#form {
+    width: 400px;
+    align-self: center;
 }
 
 footer {
     grid-area: footer;
-    background-color: black;
+    background-color: #A68DAD;
     position: relative;
     bottom: 0;
-    ;   
-  
+}
+
+input[type=email] {
+    height: 40px;
+    width: 250px;
+    font-size: 1em;
+    padding-left: 15px;
+}
+
+#form-submit {
+    font-size: 1em;
+    size: 3em;
+    width: 100px;
+    height: 40px;
+    margin: 30px 0 10px 0;
 }
 
 #footer__text {
@@ -176,7 +204,6 @@ footer {
     flex-direction: row;
     
 }
-
 
 @media (max-width: 320px) {
     #nav-bar {
