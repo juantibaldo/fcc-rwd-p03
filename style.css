@@ -10,6 +10,7 @@ li, a, button, h1 {
 }
 
 h1 {
+    margin:auto;
     font-size: 3em;
 }
 
@@ -35,13 +36,16 @@ header {
     align-items: center;
     background-color: #F0ECE3;
     justify-content: space-between;
-    padding: 30px 5%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 3%;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     
 }
 
 #header-img {
     object-fit: cover;
+    padding: 0;
     
     
 }
